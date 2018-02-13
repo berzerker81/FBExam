@@ -6,33 +6,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FBTest/ViewController.swift"
-            timestampString = "540201753.981148"
+            timestampString = "540205906.408512"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "signup(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTest/ViewController.swift"
-            timestampString = "540201766.795168"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "signin(_:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FBTest.ViewController.signup(Any) -&gt; ()"
+                  moduleName = "FBTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jang-ung/Documents/GitHub/FBExam/FBTest/FBTest/ViewController.swift"
+                  timestampString = "540203126.104555"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FBTest.ViewController.signup(Any) -&gt; ()"
+                  moduleName = "FBTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jang-ung/Documents/GitHub/FBExam/FBTest/FBTest/ViewController.swift"
+                  timestampString = "540203126.1062959"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

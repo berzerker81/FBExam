@@ -8,11 +8,18 @@
 
 import UIKit
 import FirebaseAuth
+import Toaster
 
-class ViewController: UIViewController {
+class ViewController: BaseVC {
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPass: UITextField!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
+    {
+        didSet
+        {
+            self.loadingActivity = indicator
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,30 +56,61 @@ class ViewController: UIViewController {
     
     @IBAction func signup(_ sender: Any) {
         
+        self.showLoading(true)
+        
         if let pass = self.tfPass.text , let email = self.tfEmail.text
         {
-            Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
-                if let authUser = user
-                {
 
+            Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
+                if error != nil
+                {
+                    //Error
+                    Toast(text: error!.localizedDescription).show()
+                }else
+                {
+                    
                 }
             })
+        }else
+        {
+            self.showLoading(false)
+      
         }
         
     }
     
 
     @IBAction func signin(_ sender: Any) {
+        self.showLoading(true)
+        
+        
+        
+        let cur = AccountInfo.current()
         
         if let pass = self.tfPass.text , let email = self.tfEmail.text
         {
-            Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
-                if let authUser = user
-                {
-                    
-                }
-            })
+            
+            DispatchQueue.global(qos: .background).async
+            {
+                Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
+                    if error != nil
+                    {
+                        //Error
+                        Toast(text: error!.localizedDescription).show()
+                    }else
+                    {
+                        let usr = user!
+                        
+                        
+                    }
+                })
+            }
+        }else
+        {
+            self.showLoading(false)
         }
     }
+    
+    
 }
 

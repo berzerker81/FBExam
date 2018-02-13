@@ -42,11 +42,13 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - Toaster (2.1.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - Toaster
 
 SPEC CHECKSUMS:
   Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
@@ -59,7 +61,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: ef6fb9e2c1adb37c39e51bdcc8b482557ab92316
+PODFILE CHECKSUM: 27553e8077274b2ec04af97e792a97ba5988f3ac
 
 COCOAPODS: 1.3.0
