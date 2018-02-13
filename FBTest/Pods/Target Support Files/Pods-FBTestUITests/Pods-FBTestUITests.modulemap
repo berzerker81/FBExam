@@ -1,0 +1,6 @@
+framework module Pods_FBTestUITests {
+  umbrella header "Pods-FBTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
