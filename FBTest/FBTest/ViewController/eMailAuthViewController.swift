@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import Toaster
 
-class ViewController: BaseVC {
+class eMailAuthViewController: BaseVC {
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPass: UITextField!
     @IBOutlet weak var indicator: UIActivityIndicatorView!

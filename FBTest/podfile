@@ -8,6 +8,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Toaster'
+pod 'Firebase/Messaging'
   # Pods for FBTest
 
   target 'FBTestTests' do

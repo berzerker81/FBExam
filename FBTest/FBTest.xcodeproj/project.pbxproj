@@ -12,7 +12,7 @@
 		5EF92996312434EE7819473E /* Pods_FBTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BDB4D872F89C46239F2173 /* Pods_FBTest.framework */; };
 		941338082032E39000B901F0 /* sharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941338072032E39000B901F0 /* sharedInstance.swift */; };
 		94316DAC2032CAAB00E9F23C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94316DAB2032CAAB00E9F23C /* AppDelegate.swift */; };
-		94316DAE2032CAAB00E9F23C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94316DAD2032CAAB00E9F23C /* ViewController.swift */; };
+		94316DAE2032CAAB00E9F23C /* eMailAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94316DAD2032CAAB00E9F23C /* eMailAuthViewController.swift */; };
 		94316DB12032CAAB00E9F23C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94316DAF2032CAAB00E9F23C /* Main.storyboard */; };
 		94316DB32032CAAB00E9F23C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94316DB22032CAAB00E9F23C /* Assets.xcassets */; };
 		94316DB62032CAAB00E9F23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94316DB42032CAAB00E9F23C /* LaunchScreen.storyboard */; };
@@ -21,6 +21,7 @@
 		94316DDA2032CACC00E9F23C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94316DD92032CACC00E9F23C /* GoogleService-Info.plist */; };
 		94316DDD2032D5F500E9F23C /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94316DDC2032D5F500E9F23C /* AuthInfo.swift */; };
 		94316DE02032DC2400E9F23C /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94316DDF2032DC2400E9F23C /* BaseVC.swift */; };
+		944BA31E20455794000EAFC2 /* SMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BA31D20455794000EAFC2 /* SMSViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,7 @@
 		941338072032E39000B901F0 /* sharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharedInstance.swift; sourceTree = "<group>"; };
 		94316DA82032CAAB00E9F23C /* FBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94316DAB2032CAAB00E9F23C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94316DAD2032CAAB00E9F23C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94316DAD2032CAAB00E9F23C /* eMailAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eMailAuthViewController.swift; sourceTree = "<group>"; };
 		94316DB02032CAAB00E9F23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94316DB22032CAAB00E9F23C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94316DB52032CAAB00E9F23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +63,8 @@
 		94316DD92032CACC00E9F23C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94316DDC2032D5F500E9F23C /* AuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfo.swift; sourceTree = "<group>"; };
 		94316DDF2032DC2400E9F23C /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		944BA31D20455794000EAFC2 /* SMSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSViewController.swift; sourceTree = "<group>"; };
+		944BA31F20455A71000EAFC2 /* FBTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FBTest.entitlements; sourceTree = "<group>"; };
 		A33D981BA7D98CA7152AE614 /* Pods-FBTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBTestTests/Pods-FBTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5168EA4722A08251B7C5617 /* Pods_FBTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4964F02C61D8DEEFCB964F6 /* Pods-FBTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBTestUITests/Pods-FBTestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,11 +135,11 @@
 		94316DAA2032CAAB00E9F23C /* FBTest */ = {
 			isa = PBXGroup;
 			children = (
+				944BA31F20455A71000EAFC2 /* FBTest.entitlements */,
 				94316DDE2032DBB700E9F23C /* ViewController */,
 				94316DDB2032D3FF00E9F23C /* Model */,
 				94316DD92032CACC00E9F23C /* GoogleService-Info.plist */,
 				94316DAB2032CAAB00E9F23C /* AppDelegate.swift */,
-				94316DAD2032CAAB00E9F23C /* ViewController.swift */,
 				94316DAF2032CAAB00E9F23C /* Main.storyboard */,
 				94316DB22032CAAB00E9F23C /* Assets.xcassets */,
 				94316DB42032CAAB00E9F23C /* LaunchScreen.storyboard */,
@@ -175,7 +178,9 @@
 		94316DDE2032DBB700E9F23C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				94316DAD2032CAAB00E9F23C /* eMailAuthViewController.swift */,
 				94316DDF2032DC2400E9F23C /* BaseVC.swift */,
+				944BA31D20455794000EAFC2 /* SMSViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -271,6 +276,11 @@
 					94316DA72032CAAB00E9F23C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					94316DBB2032CAAC00E9F23C = {
 						CreatedOnToolsVersion = 9.2;
@@ -495,8 +505,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94316DAE2032CAAB00E9F23C /* ViewController.swift in Sources */,
+				94316DAE2032CAAB00E9F23C /* eMailAuthViewController.swift in Sources */,
 				94316DAC2032CAAB00E9F23C /* AppDelegate.swift in Sources */,
+				944BA31E20455794000EAFC2 /* SMSViewController.swift in Sources */,
 				94316DDD2032D5F500E9F23C /* AuthInfo.swift in Sources */,
 				941338082032E39000B901F0 /* sharedInstance.swift in Sources */,
 				94316DE02032DC2400E9F23C /* BaseVC.swift in Sources */,
@@ -666,11 +677,12 @@
 			baseConfigurationReference = 66A0CE1C51992B9E5DB3E287 /* Pods-FBTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FBTest/FBTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VBLJEZR6VM;
 				INFOPLIST_FILE = FBTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.noleplay81.FBTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.walkbrain.FBTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -682,11 +694,12 @@
 			baseConfigurationReference = 09295C779A64F4BC9251AA32 /* Pods-FBTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FBTest/FBTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VBLJEZR6VM;
 				INFOPLIST_FILE = FBTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.noleplay81.FBTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.walkbrain.FBTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
